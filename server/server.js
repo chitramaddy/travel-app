@@ -9,7 +9,7 @@ const { typeDefs, resolvers } = require("./schemas");
 // Import the database connection configuration
 const db = require("./config/connection");
 
-const PORT = process.env.PORT || 3001;  // Define the port for the server
+const PORT = process.env.MONGOPORT || 3001;  // Define the port for the server
 const app = express();  // Initialize an Express application
 const server = new ApolloServer({
   typeDefs,  // GraphQL schema type definitions
