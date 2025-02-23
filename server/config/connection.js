@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 // mongoose.connect(process.env.MONGODB_URL || 'mongodb://127.0.0.1:27017/nomadnotesdb');
 
 // Use the environment variable for MongoDB connection
-const dbUrl = process.env.MONGO_URL || 'mongodb://127.0.0.1:27017/localDbName';
+const dbUrl = process.env.MONGO_URL || 'mongodb://127.0.0.1:27017/nomadnotesdb';
 
 mongoose.connect(dbUrl, {
   useNewUrlParser: true,
